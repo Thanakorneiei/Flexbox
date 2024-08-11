@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sheet {
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.title {
+    z-index: 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+.tag {
+    z-index: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 5px;
+    padding-right: 8px;
+}
+.name {
+    z-index: 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding-bottom: 5px;
+    padding-right: 8px;
+}
+
+img {
+    position: absolute;
+}
+
+.content1, .content2>div>div {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 5px solid black;
+}
+
+.header {
+    min-height:400px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 5px solid black;
+}
+
+.content1 {
+    min-height: 600px;
+}
+.footer {
+    min-height: 300px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 5px solid black;
+}
+.credit {
+    padding-bottom: 5px;
+    padding-right: 8px;
+    z-index: 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.main {
+    flex: 6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content2>div {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .main {
+        min-height: 900px;
+    }
+
+   .content1 {
+        flex: 100%;
+    }
+
+    .content2 {
+        min-height: 600px;
+    }
+
+    .header {
+        min-height: 200px;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
+    .tag {
+        font-size: 30px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .credit {
+        font-size: 10px;
+    }
+    .footer {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .title {
+        font-size: 25px;
+    }
+    .name {
+        font-size: 25px;
+    }
+    
+    .content2>div {
+        flex-direction: column;
+    }
+
+    .content2>div>div {
+        min-height: 300px;
+    }
+    .header {
+        min-height: 150px;
+    }
+    .footer {
+        min-height: 150px;
+    }
+}
+
